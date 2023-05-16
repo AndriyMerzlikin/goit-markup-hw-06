@@ -642,9 +642,9 @@ body {
   pointer-events: none;
 }
 .modal {
-  padding: 72px 24px;
+  padding: 72px 24px 24px;
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   background-color: var(--modal-bg-clr);
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -663,6 +663,7 @@ body {
   width: 24px;
   height: 24px;
   padding: 0;
+  margin-bottom: 24px;
   position: absolute;
   top: 24px;
   right: 24px;
@@ -703,7 +704,6 @@ body {
 .form-label {
   display: block;
   margin-bottom: 4px;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -752,11 +752,10 @@ body {
   border-radius: 4px;
   outline: none;
 
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  color: var(--main-txt-clr);
 }
 .form-agreement {
   display: flex;
